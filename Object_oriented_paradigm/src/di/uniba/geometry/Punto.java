@@ -46,5 +46,14 @@ public class Punto {
 		this.y = y;
 	}
 	
+	public void trasla(double dx, double dy) {
+		setX(getX()+dx);
+		setY(getY()+dy);
+	}
+	
+	@Override
+	public String toString() {
+		return "X: " + getX() + " - Y: " + getY(); 
+	}
 	
 }
