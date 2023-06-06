@@ -1,6 +1,6 @@
 package di.uniba.geometry;
 
-public class MainPunto {
+public class MainTest {
 	public static void main(String[] args) {
 		Punto origine = new Punto();
 		origine.setX(0);
@@ -8,5 +8,8 @@ public class MainPunto {
 		System.out.println(origine);
 		origine.trasla(1, 3);
 		System.out.println(origine);
+		
+		Rettangolo rect = new Rettangolo(9.5, 6, origine);
+		rect.draw();
 		}
 }
